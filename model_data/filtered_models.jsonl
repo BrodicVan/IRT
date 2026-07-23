@@ -1,0 +1,878 @@
+[
+  {
+    "model": "kwchoi/DPO_mistral_v01_7b_ultra_0130_1k",
+    "model_size": 28.97
+  },
+  {
+    "model": "NLUHOPOE/test-case-3",
+    "model_size": 28.97
+  },
+  {
+    "model": "jisukim8873/mistral-7B-alpaca-case-2-2",
+    "model_size": 28.97
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-6.7b",
+    "model_size": 28.04
+  },
+  {
+    "model": "Langboat/Mengzi3-13B-Base",
+    "model_size": 27.919999999999998
+  },
+  {
+    "model": "sartifyllc/dociproLLM-7B",
+    "model_size": 27.689999999999998
+  },
+  {
+    "model": "tyson0420/stack_llama_full",
+    "model_size": 26.959999999999997
+  },
+  {
+    "model": "ShadowFall09/tyc_test1",
+    "model_size": 26.959999999999997
+  },
+  {
+    "model": "Charlie911/MultiLoRA-llama2-mmlu",
+    "model_size": 26.950000000000003
+  },
+  {
+    "model": "Korabbit/Llama-2-7b-chat-hf-afr-200step-flan",
+    "model_size": 26.950000000000003
+  },
+  {
+    "model": "uukuguy/speechless-llama2-13b",
+    "model_size": 26.71
+  },
+  {
+    "model": "Changgil/K2S3-Llama2-13b-v1.0",
+    "model_size": 26.509999999999998
+  },
+  {
+    "model": "elyza/ELYZA-japanese-Llama-2-13b",
+    "model_size": 26.03
+  },
+  {
+    "model": "abacusai/Giraffe-13b-32k-v3",
+    "model_size": 26.029999999999998
+  },
+  {
+    "model": "Eurdem/megatron_v3_2x7B",
+    "model_size": 25.759999999999998
+  },
+  {
+    "model": "cloudyu/Mixtral_7Bx2_MoE_13B",
+    "model_size": 25.759999999999998
+  },
+  {
+    "model": "ibndias/NeuralHermes-MoE-2x7B",
+    "model_size": 25.759999999999998
+  },
+  {
+    "model": "dawn17/MaidStarling-2x7B-base",
+    "model_size": 25.759999999999998
+  },
+  {
+    "model": "TomGrc/FusionNet_7Bx2_MoE_v0.1",
+    "model_size": 25.759999999999998
+  },
+  {
+    "model": "Noodlz/DolphinStar-12.5B",
+    "model_size": 24.96
+  },
+  {
+    "model": "davzoku/frankencria-llama2-12.5b-v1.3-m.2",
+    "model_size": 24.810000000000002
+  },
+  {
+    "model": "Changgil/K2S3-Mistral-7bx2-48layers_v1.2",
+    "model_size": 21.74
+  },
+  {
+    "model": "vitruv/vitruv_2",
+    "model_size": 21.72
+  },
+  {
+    "model": "Undi95/Borealis-10.7B-DPO",
+    "model_size": 21.470000000000002
+  },
+  {
+    "model": "decapoda-research/Antares-11b-v1",
+    "model_size": 21.470000000000002
+  },
+  {
+    "model": "rishiraj/meow",
+    "model_size": 21.470000000000002
+  },
+  {
+    "model": "gagan3012/MetaModelv2",
+    "model_size": 21.46
+  },
+  {
+    "model": "jeonsworld/CarbonVillain-en-10.7B-v1",
+    "model_size": 21.46
+  },
+  {
+    "model": "OpenBuddy/openbuddy-deepseek-10b-v17.1-4k",
+    "model_size": 21.110000000000003
+  },
+  {
+    "model": "yam-peleg/Experiment8-7B",
+    "model_size": 17.970000000000002
+  },
+  {
+    "model": "OEvortex/HelpingAI-9B",
+    "model_size": 17.66
+  },
+  {
+    "model": "abhishekchohan/Yi-9B-Forest-DPO-v1.0",
+    "model_size": 17.66
+  },
+  {
+    "model": "01-ai/Yi-1.5-9B-Chat-16K",
+    "model_size": 17.66
+  },
+  {
+    "model": "wandb/gemma-7b-zephyr-dpo",
+    "model_size": 17.07
+  },
+  {
+    "model": "mervinpraison/tamil-large-language-model-7b-v1.0",
+    "model_size": 17.07
+  },
+  {
+    "model": "maldv/badger-l3-instruct-32k",
+    "model_size": 16.08
+  },
+  {
+    "model": "Suduk/Llama-3-8B-Viper-16bit",
+    "model_size": 16.07
+  },
+  {
+    "model": "Mr-Bhaskar/fbt-llama-8b-inst",
+    "model_size": 16.07
+  },
+  {
+    "model": "g-ronimo/llama3-8b-SlimHermes",
+    "model_size": 16.07
+  },
+  {
+    "model": "cookinai/LlamaReflect-8B-CoT-safetensors",
+    "model_size": 16.07
+  },
+  {
+    "model": "dreamgen/llama3-8b-instruct-align-test2-kto",
+    "model_size": 16.07
+  },
+  {
+    "model": "Edgerunners/Llama-3-8B-Instruct-ortho-baukit-toxic-v2",
+    "model_size": 16.07
+  },
+  {
+    "model": "Syed-Hasan-8503/Llama-3-8B-NOLA",
+    "model_size": 16.07
+  },
+  {
+    "model": "lcw99/llama-3-8b-it-kor-extented-chang",
+    "model_size": 16.07
+  },
+  {
+    "model": "Undi95/Llama-3-LewdPlay-8B",
+    "model_size": 16.07
+  },
+  {
+    "model": "ajibawa-2023/Scarlett-Llama-3-8B",
+    "model_size": 16.07
+  },
+  {
+    "model": "Nitral-AI/Poppy_Porpoise-0.72-L3-8B",
+    "model_size": 16.07
+  },
+  {
+    "model": "flammenai/Mahou-1.1-llama3-8B",
+    "model_size": 16.07
+  },
+  {
+    "model": "saishf/Merge-Mayhem-L3-V2",
+    "model_size": 16.0615234375
+  },
+  {
+    "model": "Azure99/blossom-v5-llama3-8b",
+    "model_size": 16.060000000000002
+  },
+  {
+    "model": "Azazelle/L3-RP_io",
+    "model_size": 16.060000000000002
+  },
+  {
+    "model": "nbeerbower/llama-3-slerp-kraut-dragon-8B",
+    "model_size": 16.060000000000002
+  },
+  {
+    "model": "cookinai/Llama-3-SOLAR-v0.2",
+    "model_size": 16.06
+  },
+  {
+    "model": "NeverSleep/Llama-3-Lumimaid-8B-v0.1",
+    "model_size": 16.06
+  },
+  {
+    "model": "Kukedlc/NeuralMiLLaMa-8B-slerp",
+    "model_size": 16.06
+  },
+  {
+    "model": "Nitral-AI/Poppy_Porpoise-0.85-L3-8B",
+    "model_size": 16.06
+  },
+  {
+    "model": "MaziyarPanahi/Llama-3-8B-Instruct-v0.8",
+    "model_size": 16.06
+  },
+  {
+    "model": "NECOUDBFM/Jellyfish",
+    "model_size": 15.731835937500001
+  },
+  {
+    "model": "Qwen/Qwen1.5-7B",
+    "model_size": 15.45
+  },
+  {
+    "model": "CausalLM/7B",
+    "model_size": 15.440000000000001
+  },
+  {
+    "model": "Weyaxi/MetaMath-neural-chat-7b-v3-2-Ties",
+    "model_size": 15.0
+  },
+  {
+    "model": "Weyaxi/neural-chat-7b-v3-1-OpenHermes-2.5-7B",
+    "model_size": 15.0
+  },
+  {
+    "model": "OpenBuddy/openbuddy-mistral2-7b-v20.1-32k",
+    "model_size": 14.56
+  },
+  {
+    "model": "scb10x/typhoon-7b",
+    "model_size": 14.540000000000001
+  },
+  {
+    "model": "Weyaxi/TekniumAiroboros-Nebula-7B",
+    "model_size": 14.490000000000002
+  },
+  {
+    "model": "grimjim/Mistral-Starling-merge-trial3-7B",
+    "model_size": 14.490000000000002
+  },
+  {
+    "model": "grimjim/fireblossom-32K-7B",
+    "model_size": 14.49
+  },
+  {
+    "model": "mayacinka/yam-sam-7B",
+    "model_size": 14.49
+  },
+  {
+    "model": "Kukedlc/NeuralGanesha-7b",
+    "model_size": 14.49
+  },
+  {
+    "model": "automerger/Inex12Yamshadow-7B",
+    "model_size": 14.49
+  },
+  {
+    "model": "Yash21/SuperChat-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "DeepMount00/Mistral-Ita-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "TeeZee/Buttocks-7B-v1.0",
+    "model_size": 14.48
+  },
+  {
+    "model": "ankhamun/xxxI-Ixxx",
+    "model_size": 14.48
+  },
+  {
+    "model": "Severian/ANIMA-Nectar-v3",
+    "model_size": 14.48
+  },
+  {
+    "model": "alnrg2arg/blockchainlabs_7B_merged_test2_4_prune",
+    "model_size": 14.48
+  },
+  {
+    "model": "RESMPDEV/Wukong-0.1-Mistral-7B-v0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "ericpolewski/AIRIC-The-Mistral",
+    "model_size": 14.48
+  },
+  {
+    "model": "maywell/Synatra-7B-v0.3-RP",
+    "model_size": 14.48
+  },
+  {
+    "model": "abdulrahman-nuzha/finetuned-Mistral-5000-v1.0",
+    "model_size": 14.48
+  },
+  {
+    "model": "FredrikBL/test-ties",
+    "model_size": 14.48
+  },
+  {
+    "model": "CorticalStack/mistral-7b-openhermes-2.5-sft",
+    "model_size": 14.48
+  },
+  {
+    "model": "ShenaoZ/0.0_withdpo_4iters_bs256_5551lr_iter_4",
+    "model_size": 14.48
+  },
+  {
+    "model": "lodrick-the-lafted/Hermes-Instruct-7B-v0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "cookinai/Blitz-v0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "indischepartij/OpenMia-Indo-Mistral-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "Radiantloom/radintloom-mistral-7b-fusion-dpo",
+    "model_size": 14.48
+  },
+  {
+    "model": "ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_1",
+    "model_size": 14.48
+  },
+  {
+    "model": "cypienai/cymist-2-v02-SFT",
+    "model_size": 14.48
+  },
+  {
+    "model": "MaziyarPanahi/Mistral-7B-Instruct-KhanAcademy-v0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "UCLA-AGI/zephyr-7b-sft-full-SPIN-iter1",
+    "model_size": 14.48
+  },
+  {
+    "model": "Mihaiii/Metis-0.3",
+    "model_size": 14.48
+  },
+  {
+    "model": "abhishekchohan/mistral-7B-forest-merge",
+    "model_size": 14.48
+  },
+  {
+    "model": "wang7776/Mistral-7B-Instruct-v0.2-sparsity-10",
+    "model_size": 14.48
+  },
+  {
+    "model": "Novocoders/Mistral-NeuralDPO-v0.6",
+    "model_size": 14.48
+  },
+  {
+    "model": "abideen/Mistral-v2-orpo",
+    "model_size": 14.48
+  },
+  {
+    "model": "UCLA-AGI/test_final",
+    "model_size": 14.48
+  },
+  {
+    "model": "uukuguy/Mistral-7B-OpenOrca-lora-merged",
+    "model_size": 14.48
+  },
+  {
+    "model": "wandb/mistral-7b-zephyr-sft",
+    "model_size": 14.48
+  },
+  {
+    "model": "Novocoders/Mistral-NeuralDPO-v0.4",
+    "model_size": 14.48
+  },
+  {
+    "model": "Azazelle/Moko-SAMPLE",
+    "model_size": 14.48
+  },
+  {
+    "model": "Lexic0n/Mistral_7B-Open_Hermes-NSFWV1",
+    "model_size": 14.48
+  },
+  {
+    "model": "cognitivecomputations/fc-dolphin-2.6-mistral-7b-dpo-laser",
+    "model_size": 14.48
+  },
+  {
+    "model": "jondurbin/bagel-7b-v0.1",
+    "model_size": 14.48
+  },
+  {
+    "model": "indischepartij/OpenMia-Indo-Mistral-7b-v3-refined",
+    "model_size": 14.48
+  },
+  {
+    "model": "amazingvince/openhermes-7b-dpo",
+    "model_size": 14.48
+  },
+  {
+    "model": "splm/openchat-spin-slimorca-iter1",
+    "model_size": 14.48
+  },
+  {
+    "model": "liminerity/Blur-7b-v1.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "sonthenguyen/OpenHermes-2.5-Mistral-7B-mt-bench-DPO-recovered",
+    "model_size": 14.48
+  },
+  {
+    "model": "PulsarAI/Neural-una-cybertron-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "CallComply/openchat-3.5-0106-32k",
+    "model_size": 14.48
+  },
+  {
+    "model": "hydra-project/ChatHercules-2.5-Mistral-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "one-man-army/una-neural-chat-v3-3-P1-OMA",
+    "model_size": 14.48
+  },
+  {
+    "model": "nlpguy/StarFusion-alpha1",
+    "model_size": 14.48
+  },
+  {
+    "model": "chargoddard/piano-medley-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "lex-hue/Delexa-Instruct-V0.1-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "lex-hue/Delexa-V0.1-7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "Weyaxi/MetaMath-Chupacabra-7B-v2.01-Slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "liminerity/e.star.7b",
+    "model_size": 14.48
+  },
+  {
+    "model": "grimjim/kukulemon-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "chanwit/flux-7b-v0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "mlabonne/NeuralPipe-7B-slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "Samee-ur/NeuralPipe-7B-slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "RatanRohith/NeuralPizza-7B-V0.2",
+    "model_size": 14.48
+  },
+  {
+    "model": "flammenai/Mahou-1.2-mistral-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "RatanRohith/NeuralPizza-7B-V0.3",
+    "model_size": 14.48
+  },
+  {
+    "model": "flammenai/flammen23X-mistral-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "Weyaxi/openchat-3.5-1210-Seraph-Slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "Toten5/Marcoroni-v3-neural-chat-v3-3-Slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "flammenai/flammen26-mistral-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "EmbeddedLLM/Mistral-7B-Merge-14-v0.5",
+    "model_size": 14.48
+  },
+  {
+    "model": "jan-hq/supermario-slerp-v3",
+    "model_size": 14.48
+  },
+  {
+    "model": "mlabonne/NeuralMarcoro14-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "Kquant03/NeuralTrix-7B-dpo-laser",
+    "model_size": 14.48
+  },
+  {
+    "model": "BarryFutureman/WestLakeX-7B-EvoMerge",
+    "model_size": 14.48
+  },
+  {
+    "model": "jsfs11/WestOrcaNeuralMarco-DPO-v2-DARETIES-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "yleo/EmertonMonarch-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "Gille/StrangeMerges_10-7B-slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "FelixChao/Faraday-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "abideen/AlphaMonarch-dora",
+    "model_size": 14.48
+  },
+  {
+    "model": "leveldevai/TurdusBeagle-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "alnrg2arg/blockchainlabs_7B_merged_test2_4",
+    "model_size": 14.48
+  },
+  {
+    "model": "Kukedlc/Brocae-Area-7B-slerp",
+    "model_size": 14.48
+  },
+  {
+    "model": "CultriX/NeuralTrix-7B-v1",
+    "model_size": 14.48
+  },
+  {
+    "model": "automerger/NeuralsirkrishnaExperiment26-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "eren23/ogno-monarch-jaskier-merge-7b-OH-PREF-DPO-v4-test",
+    "model_size": 14.48
+  },
+  {
+    "model": "MaziyarPanahi/Experiment26Yam_Ognoexperiment27Multi_verse_model",
+    "model_size": 14.48
+  },
+  {
+    "model": "Syed-Hasan-8503/Versatile-7B",
+    "model_size": 14.48
+  },
+  {
+    "model": "flemmingmiguel/MBX-7B-v3",
+    "model_size": 14.48
+  },
+  {
+    "model": "shyamieee/Maverick-v1.0",
+    "model_size": 14.4773046875
+  },
+  {
+    "model": "Cesco2004/TW3CESCO.V3",
+    "model_size": 14.4773046875
+  },
+  {
+    "model": "shyamieee/B3E3-SLM-7b-v1.0",
+    "model_size": 14.4773046875
+  },
+  {
+    "model": "Nitral-AI/Visual-LaylelemonMaidRP-7B",
+    "model_size": 14.477304687499998
+  },
+  {
+    "model": "Locutusque/OpenCerebrum-1.5-Mistral-7B-v0.2-beta",
+    "model_size": 14.476875
+  },
+  {
+    "model": "Locutusque/Hercules-3.0-Mistral-7B",
+    "model_size": 14.476875
+  },
+  {
+    "model": "Liangmingxin/ThetaWave-7B-sft",
+    "model_size": 14.476875
+  },
+  {
+    "model": "tourist800/Marcoro14-7B-slerp",
+    "model_size": 14.474765625000002
+  },
+  {
+    "model": "Stopwolf/DistilabelCerberus-7B-slerp",
+    "model_size": 14.474765625000002
+  },
+  {
+    "model": "Inv/Konstanta-V4-Alpha-7B",
+    "model_size": 14.4715625
+  },
+  {
+    "model": "Kukedlc/NeuTrixOmniBe-7B-model-remix",
+    "model_size": 14.4715625
+  },
+  {
+    "model": "mahiatlinux/ShadowDolph-7B-v1",
+    "model_size": 14.4705078125
+  },
+  {
+    "model": "AbacusResearch/haLLawa4-7b",
+    "model_size": 14.4705078125
+  },
+  {
+    "model": "mayacinka/Buttercup-7b-dpo-ties",
+    "model_size": 14.4705078125
+  },
+  {
+    "model": "MiniMoog/Mergerix-7b-v0.4",
+    "model_size": 14.4705078125
+  },
+  {
+    "model": "sethuiyer/CodeCalc-Mistral-7B",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "aridoverrun/Foxglove_7B",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "Yuma42/KangalKhan-RawEmerald-7B",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "Test157t/Kunocchini-7b",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "core-3/kuno-royale-v3-7b",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "bunnycore/SmartToxic-7B",
+    "model_size": 14.470507812499998
+  },
+  {
+    "model": "mvpmaster/kellemar-KrishnaHercules-0.1-7b-slerp",
+    "model_size": 14.466875
+  },
+  {
+    "model": "jisukim8873/falcon-7B-case-c",
+    "model_size": 13.84
+  },
+  {
+    "model": "damerajee/Gaja-v2.00-dpo",
+    "model_size": 13.75
+  },
+  {
+    "model": "sarvamai/OpenHathi-7B-Hi-v0.1-Base",
+    "model_size": 13.74
+  },
+  {
+    "model": "jan-hq/komodo-7b-chat",
+    "model_size": 13.530000000000001
+  },
+  {
+    "model": "malhajar/meditron-7b-chat",
+    "model_size": 13.48
+  },
+  {
+    "model": "itsliupeng/openllama-7b-base",
+    "model_size": 13.48
+  },
+  {
+    "model": "wang7776/vicuna-7b-v1.3-sparsity-10",
+    "model_size": 13.48
+  },
+  {
+    "model": "ncsgobubble/Llama-7B-rollercoaster_v2",
+    "model_size": 13.48
+  },
+  {
+    "model": "hamxea/StableBeluga-7B-activity-fine-tuned-v2",
+    "model_size": 13.48
+  },
+  {
+    "model": "hongzoh/Yi-Ko-6B_Open-Platypus",
+    "model_size": 12.36
+  },
+  {
+    "model": "bigcode/starcoderbase-3b",
+    "model_size": 12.18
+  },
+  {
+    "model": "pszemraj/Mistral-v0.3-6B",
+    "model_size": 11.879999999999999
+  },
+  {
+    "model": "prince-canuma/Damysus-2.7B-Chat",
+    "model_size": 11.100000000000001
+  },
+  {
+    "model": "Telugu-LLM-Labs/Indic-gemma-2b-finetuned-sft-Navarasa-2.0",
+    "model_size": 10.020859375
+  },
+  {
+    "model": "KnutJaegersberg/Deita-4b",
+    "model_size": 7.9
+  },
+  {
+    "model": "vonjack/phi-3-mini-4k-instruct-llamafied",
+    "model_size": 7.64
+  },
+  {
+    "model": "KnutJaegersberg/Qwen-1_8b-EverythingLM",
+    "model_size": 7.35
+  },
+  {
+    "model": "yanolja/EEVE-Korean-Instruct-2.8B-v1.0",
+    "model_size": 5.6233203125
+  },
+  {
+    "model": "pansophic/rocket-3B",
+    "model_size": 5.59
+  },
+  {
+    "model": "netcat420/MFANN3bv0.7.10",
+    "model_size": 5.56
+  },
+  {
+    "model": "field2437/phi-2-platypus-Commercial-lora",
+    "model_size": 5.55078125
+  },
+  {
+    "model": "avinash31d/phi-2-slerp",
+    "model_size": 5.55
+  },
+  {
+    "model": "liminerity/Phigments12",
+    "model_size": 5.55
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-1.3b",
+    "model_size": 5.48
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-1.3b-instruct",
+    "model_size": 5.48
+  },
+  {
+    "model": "mwitiderrick/shearedplats-2.7b-v2-instruct-v0.1",
+    "model_size": 5.3889453125
+  },
+  {
+    "model": "vihangd/shearedplats-2.7b-v2",
+    "model_size": 5.2783203125
+  },
+  {
+    "model": "euclaise/crow-1b",
+    "model_size": 5.2426953125
+  },
+  {
+    "model": "jylee420/gemma-2b-data-std",
+    "model_size": 5.0155273437500005
+  },
+  {
+    "model": "RESMPDEV/Gemma-Wukong-2b",
+    "model_size": 5.0155273437500005
+  },
+  {
+    "model": "wandb/gemma-2b-zephyr-dpo",
+    "model_size": 5.0155273437500005
+  },
+  {
+    "model": "Josephgflowers/TinyLlama-Cinder-Agent-v1",
+    "model_size": 4.4
+  },
+  {
+    "model": "TheBloke/neural-chat-7B-v3-2-GPTQ",
+    "model_size": 4.16
+  },
+  {
+    "model": "RESMPDEV/Qwen1.5-Wukong-1.8B",
+    "model_size": 3.67
+  },
+  {
+    "model": "vicgalleorg/TruthfulQwen1.5-1.8B",
+    "model_size": 3.67
+  },
+  {
+    "model": "HuggingFaceFW/ablation-model-fineweb-v1",
+    "model_size": 3.43
+  },
+  {
+    "model": "h4rz3rk4s3/TinyNewsLlama-1.1B",
+    "model_size": 2.2
+  },
+  {
+    "model": "opencsg/csg-wukong-1B-orpo-bf16",
+    "model_size": 2.2
+  },
+  {
+    "model": "MysteriousAI/Mia-1B",
+    "model_size": 2.2
+  },
+  {
+    "model": "davanstrien/TinyLlama-1.1B-Chat-v1.0-intel-dpo",
+    "model_size": 2.2
+  },
+  {
+    "model": "aihub-app/zyte-1B",
+    "model_size": 2.2
+  },
+  {
+    "model": "KnutJaegersberg/Deita-500m",
+    "model_size": 1.85
+  },
+  {
+    "model": "Abhaykoul/qwen1.5-vortex",
+    "model_size": 0.90625
+  },
+  {
+    "model": "FINGU-AI/Qwen-Orpo-v1",
+    "model_size": 0.9052734375
+  },
+  {
+    "model": "Sharathhebbar24/math_gpt2",
+    "model_size": 0.486328125
+  },
+  {
+    "model": "BEE-spoke-data/smol_llama-220M-GQA",
+    "model_size": 0.42578125
+  },
+  {
+    "model": "BEE-spoke-data/smol_llama-81M-tied",
+    "model_size": 0.3173828125
+  },
+  {
+    "model": "Felladrin/Minueza-32M-UltraChat",
+    "model_size": 0.1279296875
+  }
+]

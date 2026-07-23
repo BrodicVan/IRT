@@ -1,0 +1,1097 @@
+[
+  {
+    "model": "abideen/Mistral-v2-orpo",
+    "model_size": 14.48,
+    "accuracy": 0.66025931634781
+  },
+  {
+    "model": "gagan3012/MetaModelv2",
+    "model_size": 21.46,
+    "accuracy": 0.727037809411551
+  },
+  {
+    "model": "scb10x/typhoon-7b",
+    "model_size": 14.540000000000001,
+    "accuracy": 0.614742950403482
+  },
+  {
+    "model": "vonjack/phi-3-mini-4k-instruct-llamafied",
+    "model_size": 7.64,
+    "accuracy": 0.691313809048871
+  },
+  {
+    "model": "itsliupeng/openllama-7b-base",
+    "model_size": 13.48,
+    "accuracy": 0.459787832079064
+  },
+  {
+    "model": "jsfs11/WestOrcaNeuralMarco-DPO-v2-DARETIES-7B",
+    "model_size": 14.48,
+    "accuracy": 0.736150149605585
+  },
+  {
+    "model": "tourist800/Marcoro14-7B-slerp",
+    "model_size": 14.474765625000002,
+    "accuracy": 0.650330945688639
+  },
+  {
+    "model": "h4rz3rk4s3/TinyNewsLlama-1.1B",
+    "model_size": 2.2,
+    "accuracy": 0.258772327500227
+  },
+  {
+    "model": "KnutJaegersberg/Deita-4b",
+    "model_size": 7.9,
+    "accuracy": 0.540166832895095
+  },
+  {
+    "model": "lex-hue/Delexa-V0.1-7b",
+    "model_size": 14.48,
+    "accuracy": 0.703508931000091
+  },
+  {
+    "model": "Korabbit/Llama-2-7b-chat-hf-afr-200step-flan",
+    "model_size": 26.950000000000003,
+    "accuracy": 0.512557802157947
+  },
+  {
+    "model": "ibndias/NeuralHermes-MoE-2x7B",
+    "model_size": 25.759999999999998,
+    "accuracy": 0.674041164203464
+  },
+  {
+    "model": "Weyaxi/openchat-3.5-1210-Seraph-Slerp",
+    "model_size": 14.48,
+    "accuracy": 0.719602865173633
+  },
+  {
+    "model": "Felladrin/Minueza-32M-UltraChat",
+    "model_size": 0.1279296875,
+    "accuracy": 0.198431408105903
+  },
+  {
+    "model": "Undi95/Llama-3-LewdPlay-8B",
+    "model_size": 16.07,
+    "accuracy": 0.672363768247348
+  },
+  {
+    "model": "opencsg/csg-wukong-1B-orpo-bf16",
+    "model_size": 2.2,
+    "accuracy": 0.266343276815668
+  },
+  {
+    "model": "pansophic/rocket-3B",
+    "model_size": 5.59,
+    "accuracy": 0.50938435034908
+  },
+  {
+    "model": "core-3/kuno-royale-v3-7b",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.740320971982954
+  },
+  {
+    "model": "Samee-ur/NeuralPipe-7B-slerp",
+    "model_size": 14.48,
+    "accuracy": 0.712621271194125
+  },
+  {
+    "model": "mervinpraison/tamil-large-language-model-7b-v1.0",
+    "model_size": 17.07,
+    "accuracy": 0.650965636050413
+  },
+  {
+    "model": "Locutusque/Hercules-3.0-Mistral-7B",
+    "model_size": 14.476875,
+    "accuracy": 0.658173905159126
+  },
+  {
+    "model": "BEE-spoke-data/smol_llama-220M-GQA",
+    "model_size": 0.42578125,
+    "accuracy": 0.186145616103001
+  },
+  {
+    "model": "Noodlz/DolphinStar-12.5B",
+    "model_size": 24.96,
+    "accuracy": 0.625623356605313
+  },
+  {
+    "model": "yleo/EmertonMonarch-7B",
+    "model_size": 14.48,
+    "accuracy": 0.737600870432496
+  },
+  {
+    "model": "Nitral-AI/Poppy_Porpoise-0.85-L3-8B",
+    "model_size": 16.06,
+    "accuracy": 0.697887387795811
+  },
+  {
+    "model": "lodrick-the-lafted/Hermes-Instruct-7B-v0.2",
+    "model_size": 14.48,
+    "accuracy": 0.63908785928008
+  },
+  {
+    "model": "Josephgflowers/TinyLlama-Cinder-Agent-v1",
+    "model_size": 4.4,
+    "accuracy": 0.269063378366126
+  },
+  {
+    "model": "Gille/StrangeMerges_10-7B-slerp",
+    "model_size": 14.48,
+    "accuracy": 0.738326230845952
+  },
+  {
+    "model": "OpenBuddy/openbuddy-deepseek-10b-v17.1-4k",
+    "model_size": 21.110000000000003,
+    "accuracy": 0.532731888657177
+  },
+  {
+    "model": "Stopwolf/DistilabelCerberus-7B-slerp",
+    "model_size": 14.474765625000002,
+    "accuracy": 0.716474748390607
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-1.3b-instruct",
+    "model_size": 5.48,
+    "accuracy": 0.241227672499773
+  },
+  {
+    "model": "alnrg2arg/blockchainlabs_7B_merged_test2_4_prune",
+    "model_size": 14.48,
+    "accuracy": 0.555082056396772
+  },
+  {
+    "model": "NeverSleep/Llama-3-Lumimaid-8B-v0.1",
+    "model_size": 16.06,
+    "accuracy": 0.672862453531598
+  },
+  {
+    "model": "Kquant03/NeuralTrix-7B-dpo-laser",
+    "model_size": 14.48,
+    "accuracy": 0.73447275364947
+  },
+  {
+    "model": "sonthenguyen/OpenHermes-2.5-Mistral-7B-mt-bench-DPO-recovered",
+    "model_size": 14.48,
+    "accuracy": 0.68419620999184
+  },
+  {
+    "model": "Weyaxi/MetaMath-neural-chat-7b-v3-2-Ties",
+    "model_size": 15.0,
+    "accuracy": 0.674494514461873
+  },
+  {
+    "model": "RatanRohith/NeuralPizza-7B-V0.3",
+    "model_size": 14.48,
+    "accuracy": 0.717970804243358
+  },
+  {
+    "model": "Undi95/Borealis-10.7B-DPO",
+    "model_size": 21.470000000000002,
+    "accuracy": 0.623855290597516
+  },
+  {
+    "model": "Novocoders/Mistral-NeuralDPO-v0.6",
+    "model_size": 14.48,
+    "accuracy": 0.655952488892919
+  },
+  {
+    "model": "wang7776/vicuna-7b-v1.3-sparsity-10",
+    "model_size": 13.48,
+    "accuracy": 0.499591984767431
+  },
+  {
+    "model": "chanwit/flux-7b-v0.2",
+    "model_size": 14.48,
+    "accuracy": 0.712122585909874
+  },
+  {
+    "model": "FelixChao/Faraday-7B",
+    "model_size": 14.48,
+    "accuracy": 0.739912956750385
+  },
+  {
+    "model": "avinash31d/phi-2-slerp",
+    "model_size": 5.55,
+    "accuracy": 0.592664792818932
+  },
+  {
+    "model": "Radiantloom/radintloom-mistral-7b-fusion-dpo",
+    "model_size": 14.48,
+    "accuracy": 0.644845407561882
+  },
+  {
+    "model": "BEE-spoke-data/smol_llama-81M-tied",
+    "model_size": 0.3173828125,
+    "accuracy": 0.177894641399946
+  },
+  {
+    "model": "nbeerbower/llama-3-slerp-kraut-dragon-8B",
+    "model_size": 16.060000000000002,
+    "accuracy": 0.707589083325778
+  },
+  {
+    "model": "Kukedlc/Brocae-Area-7B-slerp",
+    "model_size": 14.48,
+    "accuracy": 0.742451718197479
+  },
+  {
+    "model": "mwitiderrick/shearedplats-2.7b-v2-instruct-v0.1",
+    "model_size": 5.3889453125,
+    "accuracy": 0.338788648109529
+  },
+  {
+    "model": "RESMPDEV/Wukong-0.1-Mistral-7B-v0.2",
+    "model_size": 14.48,
+    "accuracy": 0.617236376824735
+  },
+  {
+    "model": "wang7776/Mistral-7B-Instruct-v0.2-sparsity-10",
+    "model_size": 14.48,
+    "accuracy": 0.654229757910962
+  },
+  {
+    "model": "vicgalleorg/TruthfulQwen1.5-1.8B",
+    "model_size": 3.67,
+    "accuracy": 0.425786562698341
+  },
+  {
+    "model": "Novocoders/Mistral-NeuralDPO-v0.4",
+    "model_size": 14.48,
+    "accuracy": 0.665291504216157
+  },
+  {
+    "model": "wandb/gemma-7b-zephyr-dpo",
+    "model_size": 17.07,
+    "accuracy": 0.62031915858192
+  },
+  {
+    "model": "flammenai/flammen23X-mistral-7B",
+    "model_size": 14.48,
+    "accuracy": 0.719149514915223
+  },
+  {
+    "model": "decapoda-research/Antares-11b-v1",
+    "model_size": 21.470000000000002,
+    "accuracy": 0.690225768428688
+  },
+  {
+    "model": "flammenai/flammen26-mistral-7B",
+    "model_size": 14.48,
+    "accuracy": 0.721053586000544
+  },
+  {
+    "model": "FINGU-AI/Qwen-Orpo-v1",
+    "model_size": 0.9052734375,
+    "accuracy": 0.264212530601142
+  },
+  {
+    "model": "nlpguy/StarFusion-alpha1",
+    "model_size": 14.48,
+    "accuracy": 0.697298032459879
+  },
+  {
+    "model": "kwchoi/DPO_mistral_v01_7b_ultra_0130_1k",
+    "model_size": 28.97,
+    "accuracy": 0.578248254601505
+  },
+  {
+    "model": "UCLA-AGI/test_final",
+    "model_size": 14.48,
+    "accuracy": 0.660939341735425
+  },
+  {
+    "model": "grimjim/kukulemon-7B",
+    "model_size": 14.48,
+    "accuracy": 0.710127844772871
+  },
+  {
+    "model": "dreamgen/llama3-8b-instruct-align-test2-kto",
+    "model_size": 16.07,
+    "accuracy": 0.663296763079155
+  },
+  {
+    "model": "Cesco2004/TW3CESCO.V3",
+    "model_size": 14.4773046875,
+    "accuracy": 0.744446459334482
+  },
+  {
+    "model": "pszemraj/Mistral-v0.3-6B",
+    "model_size": 11.879999999999999,
+    "accuracy": 0.49483180705413
+  },
+  {
+    "model": "ShadowFall09/tyc_test1",
+    "model_size": 26.959999999999997,
+    "accuracy": 0.510381720917581
+  },
+  {
+    "model": "dawn17/MaidStarling-2x7B-base",
+    "model_size": 25.759999999999998,
+    "accuracy": 0.714842687460332
+  },
+  {
+    "model": "Syed-Hasan-8503/Versatile-7B",
+    "model_size": 14.48,
+    "accuracy": 0.74530782482546
+  },
+  {
+    "model": "TheBloke/neural-chat-7B-v3-2-GPTQ",
+    "model_size": 4.16,
+    "accuracy": 0.65509112340194
+  },
+  {
+    "model": "abdulrahman-nuzha/finetuned-Mistral-5000-v1.0",
+    "model_size": 14.48,
+    "accuracy": 0.630292864266933
+  },
+  {
+    "model": "davanstrien/TinyLlama-1.1B-Chat-v1.0-intel-dpo",
+    "model_size": 2.2,
+    "accuracy": 0.2744582464412
+  },
+  {
+    "model": "CallComply/openchat-3.5-0106-32k",
+    "model_size": 14.48,
+    "accuracy": 0.68936440293771
+  },
+  {
+    "model": "abideen/AlphaMonarch-dora",
+    "model_size": 14.48,
+    "accuracy": 0.740184966905431
+  },
+  {
+    "model": "CausalLM/7B",
+    "model_size": 15.440000000000001,
+    "accuracy": 0.581875056668782
+  },
+  {
+    "model": "wandb/mistral-7b-zephyr-sft",
+    "model_size": 14.48,
+    "accuracy": 0.662616737691541
+  },
+  {
+    "model": "wandb/gemma-2b-zephyr-dpo",
+    "model_size": 5.0155273437500005,
+    "accuracy": 0.434128207453078
+  },
+  {
+    "model": "cookinai/Llama-3-SOLAR-v0.2",
+    "model_size": 16.06,
+    "accuracy": 0.649378910145979
+  },
+  {
+    "model": "Inv/Konstanta-V4-Alpha-7B",
+    "model_size": 14.4715625,
+    "accuracy": 0.721778946413999
+  },
+  {
+    "model": "netcat420/MFANN3bv0.7.10",
+    "model_size": 5.56,
+    "accuracy": 0.595928914679481
+  },
+  {
+    "model": "flammenai/Mahou-1.2-mistral-7B",
+    "model_size": 14.48,
+    "accuracy": 0.715250702692901
+  },
+  {
+    "model": "Charlie911/MultiLoRA-llama2-mmlu",
+    "model_size": 26.950000000000003,
+    "accuracy": 0.470078882944963
+  },
+  {
+    "model": "hydra-project/ChatHercules-2.5-Mistral-7B",
+    "model_size": 14.48,
+    "accuracy": 0.695847311632968
+  },
+  {
+    "model": "Abhaykoul/qwen1.5-vortex",
+    "model_size": 0.90625,
+    "accuracy": 0.307643485356787
+  },
+  {
+    "model": "Severian/ANIMA-Nectar-v3",
+    "model_size": 14.48,
+    "accuracy": 0.524027563695711
+  },
+  {
+    "model": "cognitivecomputations/fc-dolphin-2.6-mistral-7b-dpo-laser",
+    "model_size": 14.48,
+    "accuracy": 0.670459697162027
+  },
+  {
+    "model": "shyamieee/B3E3-SLM-7b-v1.0",
+    "model_size": 14.4773046875,
+    "accuracy": 0.744763804515369
+  },
+  {
+    "model": "Yuma42/KangalKhan-RawEmerald-7B",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.695439296400399
+  },
+  {
+    "model": "abhishekchohan/mistral-7B-forest-merge",
+    "model_size": 14.48,
+    "accuracy": 0.654003082781757
+  },
+  {
+    "model": "MaziyarPanahi/Llama-3-8B-Instruct-v0.8",
+    "model_size": 16.06,
+    "accuracy": 0.725859098739686
+  },
+  {
+    "model": "KnutJaegersberg/Deita-500m",
+    "model_size": 1.85,
+    "accuracy": 0.320699972798984
+  },
+  {
+    "model": "ericpolewski/AIRIC-The-Mistral",
+    "model_size": 14.48,
+    "accuracy": 0.624897996191858
+  },
+  {
+    "model": "NECOUDBFM/Jellyfish",
+    "model_size": 15.731835937500001,
+    "accuracy": 0.626031371837882
+  },
+  {
+    "model": "yam-peleg/Experiment8-7B",
+    "model_size": 17.970000000000002,
+    "accuracy": 0.733112702874241
+  },
+  {
+    "model": "MaziyarPanahi/Mistral-7B-Instruct-KhanAcademy-v0.2",
+    "model_size": 14.48,
+    "accuracy": 0.65223501677396
+  },
+  {
+    "model": "Sharathhebbar24/math_gpt2",
+    "model_size": 0.486328125,
+    "accuracy": 0.189183062834346
+  },
+  {
+    "model": "splm/openchat-spin-slimorca-iter1",
+    "model_size": 14.48,
+    "accuracy": 0.679073352071811
+  },
+  {
+    "model": "vihangd/shearedplats-2.7b-v2",
+    "model_size": 5.2783203125,
+    "accuracy": 0.345996917218243
+  },
+  {
+    "model": "cloudyu/Mixtral_7Bx2_MoE_13B",
+    "model_size": 25.759999999999998,
+    "accuracy": 0.664656813854384
+  },
+  {
+    "model": "mayacinka/yam-sam-7B",
+    "model_size": 14.49,
+    "accuracy": 0.736739504941518
+  },
+  {
+    "model": "Liangmingxin/ThetaWave-7B-sft",
+    "model_size": 14.476875,
+    "accuracy": 0.685420255689546
+  },
+  {
+    "model": "OpenBuddy/openbuddy-mistral2-7b-v20.1-32k",
+    "model_size": 14.56,
+    "accuracy": 0.608033366579019
+  },
+  {
+    "model": "Locutusque/OpenCerebrum-1.5-Mistral-7B-v0.2-beta",
+    "model_size": 14.476875,
+    "accuracy": 0.656360504125487
+  },
+  {
+    "model": "damerajee/Gaja-v2.00-dpo",
+    "model_size": 13.75,
+    "accuracy": 0.442107172001088
+  },
+  {
+    "model": "Nitral-AI/Visual-LaylelemonMaidRP-7B",
+    "model_size": 14.477304687499998,
+    "accuracy": 0.702330220328226
+  },
+  {
+    "model": "hamxea/StableBeluga-7B-activity-fine-tuned-v2",
+    "model_size": 13.48,
+    "accuracy": 0.552044609665427
+  },
+  {
+    "model": "MaziyarPanahi/Experiment26Yam_Ognoexperiment27Multi_verse_model",
+    "model_size": 14.48,
+    "accuracy": 0.745217154773778
+  },
+  {
+    "model": "Kukedlc/NeuTrixOmniBe-7B-model-remix",
+    "model_size": 14.4715625,
+    "accuracy": 0.7443557892828
+  },
+  {
+    "model": "mahiatlinux/ShadowDolph-7B-v1",
+    "model_size": 14.4705078125,
+    "accuracy": 0.656632514280533
+  },
+  {
+    "model": "sartifyllc/dociproLLM-7B",
+    "model_size": 27.689999999999998,
+    "accuracy": 0.374149968265482
+  },
+  {
+    "model": "Azazelle/L3-RP_io",
+    "model_size": 16.060000000000002,
+    "accuracy": 0.680660077976244
+  },
+  {
+    "model": "Changgil/K2S3-Llama2-13b-v1.0",
+    "model_size": 26.509999999999998,
+    "accuracy": 0.525251609393417
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-1.3b",
+    "model_size": 5.48,
+    "accuracy": 0.233430048055127
+  },
+  {
+    "model": "AbacusResearch/haLLawa4-7b",
+    "model_size": 14.4705078125,
+    "accuracy": 0.738190225768429
+  },
+  {
+    "model": "saishf/Merge-Mayhem-L3-V2",
+    "model_size": 16.0615234375,
+    "accuracy": 0.633103635869072
+  },
+  {
+    "model": "Weyaxi/neural-chat-7b-v3-1-OpenHermes-2.5-7B",
+    "model_size": 15.0,
+    "accuracy": 0.677849306374105
+  },
+  {
+    "model": "ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_1",
+    "model_size": 14.48,
+    "accuracy": 0.645480097923656
+  },
+  {
+    "model": "Edgerunners/Llama-3-8B-Instruct-ortho-baukit-toxic-v2",
+    "model_size": 16.07,
+    "accuracy": 0.664294133647656
+  },
+  {
+    "model": "chargoddard/piano-medley-7b",
+    "model_size": 14.48,
+    "accuracy": 0.698975428415994
+  },
+  {
+    "model": "eren23/ogno-monarch-jaskier-merge-7b-OH-PREF-DPO-v4-test",
+    "model_size": 14.48,
+    "accuracy": 0.744899809592891
+  },
+  {
+    "model": "yanolja/EEVE-Korean-Instruct-2.8B-v1.0",
+    "model_size": 5.6233203125,
+    "accuracy": 0.537900081603046
+  },
+  {
+    "model": "DeepMount00/Mistral-Ita-7b",
+    "model_size": 14.48,
+    "accuracy": 0.419258318977242
+  },
+  {
+    "model": "amazingvince/openhermes-7b-dpo",
+    "model_size": 14.48,
+    "accuracy": 0.677395956115695
+  },
+  {
+    "model": "Kukedlc/NeuralGanesha-7b",
+    "model_size": 14.49,
+    "accuracy": 0.741182337473932
+  },
+  {
+    "model": "Telugu-LLM-Labs/Indic-gemma-2b-finetuned-sft-Navarasa-2.0",
+    "model_size": 10.020859375,
+    "accuracy": 0.39518542025569
+  },
+  {
+    "model": "cypienai/cymist-2-v02-SFT",
+    "model_size": 14.48,
+    "accuracy": 0.64706682382809
+  },
+  {
+    "model": "uukuguy/speechless-llama2-13b",
+    "model_size": 26.71,
+    "accuracy": 0.618324417444918
+  },
+  {
+    "model": "Qwen/Qwen1.5-7B",
+    "model_size": 15.45,
+    "accuracy": 0.619321788013419
+  },
+  {
+    "model": "one-man-army/una-neural-chat-v3-3-P1-OMA",
+    "model_size": 14.48,
+    "accuracy": 0.696572672046423
+  },
+  {
+    "model": "bunnycore/SmartToxic-7B",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.742723728352525
+  },
+  {
+    "model": "Yash21/SuperChat-7B",
+    "model_size": 14.48,
+    "accuracy": 0.19453259588358
+  },
+  {
+    "model": "Mihaiii/Metis-0.3",
+    "model_size": 14.48,
+    "accuracy": 0.65368573760087
+  },
+  {
+    "model": "jan-hq/supermario-slerp-v3",
+    "model_size": 14.48,
+    "accuracy": 0.723592347447638
+  },
+  {
+    "model": "Azazelle/Moko-SAMPLE",
+    "model_size": 14.48,
+    "accuracy": 0.667376915404842
+  },
+  {
+    "model": "maywell/Synatra-7B-v0.3-RP",
+    "model_size": 14.48,
+    "accuracy": 0.628026112974884
+  },
+  {
+    "model": "vitruv/vitruv_2",
+    "model_size": 21.72,
+    "accuracy": 0.358872064557077
+  },
+  {
+    "model": "Weyaxi/MetaMath-Chupacabra-7B-v2.01-Slerp",
+    "model_size": 14.48,
+    "accuracy": 0.704551636594433
+  },
+  {
+    "model": "liminerity/Blur-7b-v1.2",
+    "model_size": 14.48,
+    "accuracy": 0.68093208813129
+  },
+  {
+    "model": "prince-canuma/Damysus-2.7B-Chat",
+    "model_size": 11.100000000000001,
+    "accuracy": 0.566823828089582
+  },
+  {
+    "model": "TomGrc/FusionNet_7Bx2_MoE_v0.1",
+    "model_size": 25.759999999999998,
+    "accuracy": 0.745851845135552
+  },
+  {
+    "model": "RESMPDEV/Qwen1.5-Wukong-1.8B",
+    "model_size": 3.67,
+    "accuracy": 0.400580288330764
+  },
+  {
+    "model": "abhishekchohan/Yi-9B-Forest-DPO-v1.0",
+    "model_size": 17.66,
+    "accuracy": 0.669371656541844
+  },
+  {
+    "model": "Syed-Hasan-8503/Llama-3-8B-NOLA",
+    "model_size": 16.07,
+    "accuracy": 0.66683289509475
+  },
+  {
+    "model": "tyson0420/stack_llama_full",
+    "model_size": 26.959999999999997,
+    "accuracy": 0.497234563423701
+  },
+  {
+    "model": "Kukedlc/NeuralMiLLaMa-8B-slerp",
+    "model_size": 16.06,
+    "accuracy": 0.692583189772418
+  },
+  {
+    "model": "jeonsworld/CarbonVillain-en-10.7B-v1",
+    "model_size": 21.46,
+    "accuracy": 0.727309819566597
+  },
+  {
+    "model": "Langboat/Mengzi3-13B-Base",
+    "model_size": 27.919999999999998,
+    "accuracy": 0.622540574848128
+  },
+  {
+    "model": "sethuiyer/CodeCalc-Mistral-7B",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.671094387523801
+  },
+  {
+    "model": "indischepartij/OpenMia-Indo-Mistral-7b-v3-refined",
+    "model_size": 14.48,
+    "accuracy": 0.67667059570224
+  },
+  {
+    "model": "automerger/NeuralsirkrishnaExperiment26-7B",
+    "model_size": 14.48,
+    "accuracy": 0.744582464412005
+  },
+  {
+    "model": "aihub-app/zyte-1B",
+    "model_size": 2.2,
+    "accuracy": 0.278629068818569
+  },
+  {
+    "model": "ncsgobubble/Llama-7B-rollercoaster_v2",
+    "model_size": 13.48,
+    "accuracy": 0.517045969716203
+  },
+  {
+    "model": "rishiraj/meow",
+    "model_size": 21.470000000000002,
+    "accuracy": 0.72463505304198
+  },
+  {
+    "model": "uukuguy/Mistral-7B-OpenOrca-lora-merged",
+    "model_size": 14.48,
+    "accuracy": 0.661528697071357
+  },
+  {
+    "model": "liminerity/e.star.7b",
+    "model_size": 14.48,
+    "accuracy": 0.708495783842597
+  },
+  {
+    "model": "abacusai/Giraffe-13b-32k-v3",
+    "model_size": 26.029999999999998,
+    "accuracy": 0.573488076888204
+  },
+  {
+    "model": "jylee420/gemma-2b-data-std",
+    "model_size": 5.0155273437500005,
+    "accuracy": 0.325596155589809
+  },
+  {
+    "model": "KnutJaegersberg/Qwen-1_8b-EverythingLM",
+    "model_size": 7.35,
+    "accuracy": 0.412548735152779
+  },
+  {
+    "model": "Weyaxi/TekniumAiroboros-Nebula-7B",
+    "model_size": 14.490000000000002,
+    "accuracy": 0.579925650557621
+  },
+  {
+    "model": "BarryFutureman/WestLakeX-7B-EvoMerge",
+    "model_size": 14.48,
+    "accuracy": 0.735334119140448
+  },
+  {
+    "model": "Lexic0n/Mistral_7B-Open_Hermes-NSFWV1",
+    "model_size": 14.48,
+    "accuracy": 0.669689001722731
+  },
+  {
+    "model": "01-ai/Yi-1.5-9B-Chat-16K",
+    "model_size": 17.66,
+    "accuracy": 0.693852570495965
+  },
+  {
+    "model": "jan-hq/komodo-7b-chat",
+    "model_size": 13.530000000000001,
+    "accuracy": 0.47651645661438
+  },
+  {
+    "model": "mlabonne/NeuralPipe-7B-slerp",
+    "model_size": 14.48,
+    "accuracy": 0.712485266116602
+  },
+  {
+    "model": "Azure99/blossom-v5-llama3-8b",
+    "model_size": 16.060000000000002,
+    "accuracy": 0.666288874784659
+  },
+  {
+    "model": "liminerity/Phigments12",
+    "model_size": 5.55,
+    "accuracy": 0.602955843684831
+  },
+  {
+    "model": "MiniMoog/Mergerix-7b-v0.4",
+    "model_size": 14.4705078125,
+    "accuracy": 0.744673134463687
+  },
+  {
+    "model": "jisukim8873/mistral-7B-alpaca-case-2-2",
+    "model_size": 28.97,
+    "accuracy": 0.641989300933901
+  },
+  {
+    "model": "flammenai/Mahou-1.1-llama3-8B",
+    "model_size": 16.07,
+    "accuracy": 0.717290778855744
+  },
+  {
+    "model": "CorticalStack/mistral-7b-openhermes-2.5-sft",
+    "model_size": 14.48,
+    "accuracy": 0.635506392238644
+  },
+  {
+    "model": "RatanRohith/NeuralPizza-7B-V0.2",
+    "model_size": 14.48,
+    "accuracy": 0.713255961555898
+  },
+  {
+    "model": "RESMPDEV/Gemma-Wukong-2b",
+    "model_size": 5.0155273437500005,
+    "accuracy": 0.386934445552634
+  },
+  {
+    "model": "EmbeddedLLM/Mistral-7B-Merge-14-v0.5",
+    "model_size": 14.48,
+    "accuracy": 0.723184332215069
+  },
+  {
+    "model": "Nitral-AI/Poppy_Porpoise-0.72-L3-8B",
+    "model_size": 16.07,
+    "accuracy": 0.687188321697343
+  },
+  {
+    "model": "Suduk/Llama-3-8B-Viper-16bit",
+    "model_size": 16.07,
+    "accuracy": 0.652915042161574
+  },
+  {
+    "model": "davzoku/frankencria-llama2-12.5b-v1.3-m.2",
+    "model_size": 24.810000000000002,
+    "accuracy": 0.501042705594342
+  },
+  {
+    "model": "FredrikBL/test-ties",
+    "model_size": 14.48,
+    "accuracy": 0.632468945507299
+  },
+  {
+    "model": "leveldevai/TurdusBeagle-7B",
+    "model_size": 14.48,
+    "accuracy": 0.741817027835706
+  },
+  {
+    "model": "bigcode/starcoderbase-3b",
+    "model_size": 12.18,
+    "accuracy": 0.208133103635869
+  },
+  {
+    "model": "field2437/phi-2-platypus-Commercial-lora",
+    "model_size": 5.55078125,
+    "accuracy": 0.581149696255327
+  },
+  {
+    "model": "lex-hue/Delexa-Instruct-V0.1-7b",
+    "model_size": 14.48,
+    "accuracy": 0.702738235560794
+  },
+  {
+    "model": "Eurdem/megatron_v3_2x7B",
+    "model_size": 25.759999999999998,
+    "accuracy": 0.658808595520899
+  },
+  {
+    "model": "g-ronimo/llama3-8b-SlimHermes",
+    "model_size": 16.07,
+    "accuracy": 0.655317798531145
+  },
+  {
+    "model": "jondurbin/bagel-7b-v0.1",
+    "model_size": 14.48,
+    "accuracy": 0.673814489074259
+  },
+  {
+    "model": "mayacinka/Buttercup-7b-dpo-ties",
+    "model_size": 14.4705078125,
+    "accuracy": 0.743857103998549
+  },
+  {
+    "model": "sarvamai/OpenHathi-7B-Hi-v0.1-Base",
+    "model_size": 13.74,
+    "accuracy": 0.438117689727083
+  },
+  {
+    "model": "ShenaoZ/0.0_withdpo_4iters_bs256_5551lr_iter_4",
+    "model_size": 14.48,
+    "accuracy": 0.636367757729622
+  },
+  {
+    "model": "cookinai/Blitz-v0.2",
+    "model_size": 14.48,
+    "accuracy": 0.641309275546287
+  },
+  {
+    "model": "hongzoh/Yi-Ko-6B_Open-Platypus",
+    "model_size": 12.36,
+    "accuracy": 0.529377096744945
+  },
+  {
+    "model": "HuggingFaceFW/ablation-model-fineweb-v1",
+    "model_size": 3.43,
+    "accuracy": 0.299845860912141
+  },
+  {
+    "model": "Toten5/Marcoroni-v3-neural-chat-v3-3-Slerp",
+    "model_size": 14.48,
+    "accuracy": 0.720600235742134
+  },
+  {
+    "model": "grimjim/Mistral-Starling-merge-trial3-7B",
+    "model_size": 14.490000000000002,
+    "accuracy": 0.684649560250249
+  },
+  {
+    "model": "PulsarAI/Neural-una-cybertron-7b",
+    "model_size": 14.48,
+    "accuracy": 0.68655363133557
+  },
+  {
+    "model": "elyza/ELYZA-japanese-Llama-2-13b",
+    "model_size": 26.03,
+    "accuracy": 0.568773234200744
+  },
+  {
+    "model": "Mr-Bhaskar/fbt-llama-8b-inst",
+    "model_size": 16.07,
+    "accuracy": 0.653413727445825
+  },
+  {
+    "model": "euclaise/crow-1b",
+    "model_size": 5.2426953125,
+    "accuracy": 0.213527971710944
+  },
+  {
+    "model": "automerger/Inex12Yamshadow-7B",
+    "model_size": 14.49,
+    "accuracy": 0.743766433946867
+  },
+  {
+    "model": "UCLA-AGI/zephyr-7b-sft-full-SPIN-iter1",
+    "model_size": 14.48,
+    "accuracy": 0.652552361954846
+  },
+  {
+    "model": "AI-Sweden-Models/gpt-sw3-6.7b",
+    "model_size": 28.04,
+    "accuracy": 0.284567957203736
+  },
+  {
+    "model": "aridoverrun/Foxglove_7B",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.690633783661257
+  },
+  {
+    "model": "Changgil/K2S3-Mistral-7bx2-48layers_v1.2",
+    "model_size": 21.74,
+    "accuracy": 0.599283706591713
+  },
+  {
+    "model": "CultriX/NeuralTrix-7B-v1",
+    "model_size": 14.48,
+    "accuracy": 0.743267748662617
+  },
+  {
+    "model": "OEvortex/HelpingAI-9B",
+    "model_size": 17.66,
+    "accuracy": 0.643893372019222
+  },
+  {
+    "model": "ankhamun/xxxI-Ixxx",
+    "model_size": 14.48,
+    "accuracy": 0.520355426602593
+  },
+  {
+    "model": "malhajar/meditron-7b-chat",
+    "model_size": 13.48,
+    "accuracy": 0.447638045153686
+  },
+  {
+    "model": "Test157t/Kunocchini-7b",
+    "model_size": 14.470507812499998,
+    "accuracy": 0.700335479191223
+  },
+  {
+    "model": "flemmingmiguel/MBX-7B-v3",
+    "model_size": 14.48,
+    "accuracy": 0.745579834980506
+  },
+  {
+    "model": "indischepartij/OpenMia-Indo-Mistral-7b",
+    "model_size": 14.48,
+    "accuracy": 0.643621361864176
+  },
+  {
+    "model": "NLUHOPOE/test-case-3",
+    "model_size": 28.97,
+    "accuracy": 0.585819203916946
+  },
+  {
+    "model": "grimjim/fireblossom-32K-7B",
+    "model_size": 14.49,
+    "accuracy": 0.70160485991477
+  },
+  {
+    "model": "jisukim8873/falcon-7B-case-c",
+    "model_size": 13.84,
+    "accuracy": 0.391105267930003
+  },
+  {
+    "model": "mvpmaster/kellemar-KrishnaHercules-0.1-7b-slerp",
+    "model_size": 14.466875,
+    "accuracy": 0.73216066733158
+  },
+  {
+    "model": "maldv/badger-l3-instruct-32k",
+    "model_size": 16.08,
+    "accuracy": 0.688185692265845
+  },
+  {
+    "model": "alnrg2arg/blockchainlabs_7B_merged_test2_4",
+    "model_size": 14.48,
+    "accuracy": 0.742089037990752
+  },
+  {
+    "model": "TeeZee/Buttocks-7B-v1.0",
+    "model_size": 14.48,
+    "accuracy": 0.507162934082872
+  },
+  {
+    "model": "MysteriousAI/Mia-1B",
+    "model_size": 2.2,
+    "accuracy": 0.272372835252516
+  },
+  {
+    "model": "cookinai/LlamaReflect-8B-CoT-safetensors",
+    "model_size": 16.07,
+    "accuracy": 0.657085864538943
+  },
+  {
+    "model": "mlabonne/NeuralMarcoro14-7B",
+    "model_size": 14.48,
+    "accuracy": 0.732795357693354
+  },
+  {
+    "model": "ajibawa-2023/Scarlett-Llama-3-8B",
+    "model_size": 16.07,
+    "accuracy": 0.678620001813401
+  },
+  {
+    "model": "lcw99/llama-3-8b-it-kor-extented-chang",
+    "model_size": 16.07,
+    "accuracy": 0.671729077885574
+  },
+  {
+    "model": "shyamieee/Maverick-v1.0",
+    "model_size": 14.4773046875,
+    "accuracy": 0.601233112702874
+  }
+]
