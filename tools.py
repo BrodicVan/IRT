@@ -1,4 +1,4 @@
-import random, torch, jsonlines, json
+import random, torch, json, os, subprocess
 
 import numpy as np
 import pandas as pd
@@ -53,16 +53,52 @@ class IRTDataGenerator:
     """
     IRT数据生成器，用于批量生成IRT参数纠正器的IRT相关数据。
     """
-    def __init__(self,responses_jsonl_path:str,,random_seed=42):
+    def __init__(self,responses_jsonl_path:str,random_seed=42):
         # 对responses_jsonl_path中的json行进行100轮取5个的抽样
         self.lines = open(responses_jsonl_path,'r',encoding='utf-8').readlines()
-        self.idxs =  range(len(self.lines))
-        self.random_seed = random_seed
+        self.model_count = len(self.lines)
 
-    
+    def generate(self, combination_count:int, anchor_count:int, 
+                 output_dir:str, 
+                 py_irt_params:Optional[dict]=None, random_seed=42):
+        """
+        选取多种模型组合进行拟合得到IRT参数数据
+        """
+        print(f"开始生成{combination_count}轮{anchor_count}个模型组合的IRT参数数据")
+        combination_set = set()
+        idxs = list(range(self.model_count))
+        if not os.path.exists(output_dir):
+            os.mkdir(output_dir)
 
+        irt_input_path = os.path.join(output_dir,'sampled_responses.jsonl')
+        irt_output_dir = os.path.join(output_dir,'fit_output')
+        training_data_path = os.path.join(output_dir,'irt_inputs.jsonl')
         
+
+        if py_irt_params is None:
+            py_irt_params = {}
+
+        irt_model_type = py_irt_params.get('model_type','2pl')
+        py_irt_params['dims'] = py_irt_params.get('dims',10)
+        py_irt_params['device'] = py_irt_params.get('device','cuda' if torch.cuda.is_available() else 'cpu')
         
+
+        while len(combination_set) < combination_count:
+            sampled_idxs = tuple(sorted(random.sample(idxs,anchor_count)))
+            if sampled_idxs in combination_set:
+                continue
+            combination_set.add(sampled_idxs)
+            with open(irt_input_path,'w',encoding='utf-8') as f:
+                f.write(''.join([self.lines[i] for i in sampled_idxs]))
+            cmd = ['py-irt','train',irt_model_type,irt_input_path,irt_output_dir]
+            for key in py_irt_params:
+                cmd.extend([f'--{key}',str(py_irt_params[key])])
+            subprocess.run(cmd)
+            with open(os.path.join(irt_output_dir,'best_parameters.json'),'r',encoding='utf-8') as f:
+                content = f.read()
+            with open(training_data_path,'a',encoding='utf-8') as f:
+                f.write(content.strip()+'\n')
+            print(f"当前已生成{len(combination_set)}轮{anchor_count}个模型组合的IRT参数数据")
 
 
 class Evaluator:
@@ -80,7 +116,7 @@ class Evaluator:
         
         self.sorted_idxs = self.scores.argsort().tolist() # 每个模型在全集的平均分排名
 
-        self.items_count, self.models_count = len(self.items), len(self.models)
+        self.item_count, self.model_count = len(self.items), len(self.models)
 
         # print(self.sorted_idxs)
 
@@ -112,9 +148,9 @@ class Evaluator:
         # 找出全集分数小于delta%的所有模型对
         delta = delta / 100
         model_pairs = []
-        for i in range(0,self.models_count-1):
+        for i in range(0,self.model_count-1):
             score_i = self.scores[self.sorted_idxs[i]]
-            for j in range(i+1,self.models_count):
+            for j in range(i+1,self.model_count):
                 
                 if (delta_score:=(self.scores[self.sorted_idxs[j]]-score_i).item())<delta:
                     model_pairs.append((self.sorted_idxs[i],self.sorted_idxs[j]))
@@ -170,10 +206,7 @@ class MyDataset(Dataset):
         anchor_idxs = np.random.choice(len(self.train_df), self.archor_count, replace=False)
         return self.train_df.iloc[anchor_idxs]
 
-    
-
-
-        
+     
     
 if __name__=='__main__':
     # sampler = Sampler()
@@ -186,5 +219,6 @@ if __name__=='__main__':
     # evaluator = Evaluator(responses_df[:5])
     # evaluator.pairwise_consistence(range(400))
     
-    irt_data_generator = IRTDataGenerator('C:/Users/f50012902/Desktop/IRT-main/demo_train.jsonl')
+    irt_data_generator = IRTDataGenerator('./global_selected_400_train.jsonl')
+    irt_data_generator.generate(100,5,'20260727')
     

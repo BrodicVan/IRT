@@ -116,7 +116,7 @@ if __name__=='__main__':
 
     # check_csv_info('/mnt/fanzhaoji/IRT/general_data/resposne_data/processed_data/global_selected_400_train.csv')
     # sample_and_save_csv('./processed_data/global_selected_400_test.csv','./processed_data/test.csv')
-    csv2jsonl('./processed_data/test.csv','narrow')
+    csv2jsonl('./processed_data/global_selected_400_train.csv')
 
 
     
