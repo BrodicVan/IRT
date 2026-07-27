@@ -47,33 +47,58 @@ def check_csv_info(csv_path):
     print(df.info())
     print(df.head())
 
+def sample_and_save_csv(input_path, output_path, n_rows=20, n_cols=20):
+    """
+    读取 CSV 文件的前 n 行和 n 列，并另存为新文件
+    """
+    df = pd.read_csv(input_path)
+    sample_df = df.iloc[:n_rows, :n_cols]
+    sample_df.to_csv(output_path, index=False)
+    print(f"已保存前{n_rows}行和{n_cols}列到{output_path}")
+
 def csv2jsonl(csv_path,type='wide'):
     """
     将csv转为py-irt使用的jsonl格式
     type: wide or narrow
     """
     df = pd.read_csv(csv_path)
-    # 筛选出列名包含source的列
-    source_cols = [col for col in df.columns if col.startswith('source')]
-    # 筛选出列名包含xxx的列
-    xxx_cols = [col for col in df.columns if col.startswith('__')]
-    # 保存jsonl文件
-    with open(csv_path.replace('.csv','.jsonl'),'w') as f:
-        for idx,row_series in df.iterrows():
-            
-            
-            # Series转json
-            data = {
-                "subject_id": row_series.iloc[0], 
-                "responses": row_series[1:].to_dict()
-            }
-            f.write(json.dumps(data,ensure_ascii=False)+'\n')
+    if type=='wide':
+        # 保存jsonl文件
+        with open(csv_path.replace('.csv','.jsonl'),'w') as f:
+            for idx,row_series in df.iterrows():
+                
+                
+                # Series转json
+                data = {
+                    "subject_id": row_series.iloc[0], 
+                    "responses": row_series[1:].to_dict()
+                }
+                f.write(json.dumps(data,ensure_ascii=False)+'\n')
+    elif type=='narrow':
+        # narrow 格式：每行一个观测记录
+        with open(csv_path.replace('.csv', '_narrow.jsonl'), 'w') as f:
+            for _, row_series in df.iterrows():
+                subject_id = row_series.iloc[0]
+                for col in df.columns[1:]:
+                    if pd.notna(row_series[col]):
+                        data = {
+                            "subject_id": subject_id,
+                            "item_id": col,
+                            "response": row_series[col]
+                        }
+                        f.write(json.dumps(data, ensure_ascii=False) + '\n')
+    else:
+        raise ValueError('type must be "wide" or "narrow"')
+
+    
+    
 
 def fit_irt(jsonl_path):
     """
     使用py-irt拟合IRT参数
     """
-    subprocess.run()
+    # subprocess.run()
+    pass
 
 if __name__=='__main__':
     # 获取所有数据来源（jiqi
@@ -90,5 +115,8 @@ if __name__=='__main__':
     #                train_models=train_models,test_models=test_models)
 
     # check_csv_info('/mnt/fanzhaoji/IRT/general_data/resposne_data/processed_data/global_selected_400_train.csv')
-    csv2jsonl('/mnt/fanzhaoji/IRT/general_data/resposne_data/processed_data/global_selected_400_train.csv')
+    # sample_and_save_csv('./processed_data/global_selected_400_test.csv','./processed_data/test.csv')
+    csv2jsonl('./processed_data/test.csv','narrow')
+
+
     
