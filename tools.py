@@ -53,7 +53,7 @@ class IRTDataGenerator:
     """
     IRT数据生成器，用于批量生成IRT参数纠正器的IRT相关数据，暂时只支持2pl。
     """
-    def __init__(self,full_responses_jsonl_path:str,full_fit_output_path:str,random_seed=42):
+    def __init__(self,full_responses_jsonl_path:str,full_fit_output_path:str,embedding_item2idx:str,random_seed=42):
         
         self.full_responses_jsonl_path = full_responses_jsonl_path
         lines = open(self.full_responses_jsonl_path,'r',encoding='utf-8').readlines()
@@ -73,6 +73,9 @@ class IRTDataGenerator:
         self.idx2item = self.full_fit_out['item_ids']
         self.item2idx = {model:idx for idx,model in self.idx2item.items()}
 
+        # 文本嵌入的题目-下标映射
+        self.embedding_item2idx = json.load(open(embedding_item2idx,'r',encoding='utf-8'))
+
         
 
 
@@ -87,7 +90,8 @@ class IRTDataGenerator:
         
         print(f"开始生成{combination_count}轮{anchor_count}个模型组合的IRT参数数据")
         combination_set = set()
-        idxs = list(range(self.model_count))
+        model_idxs = list(range(self.model_count))
+        print(f"共{self.model_count}个模型题目")
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
 
@@ -106,13 +110,15 @@ class IRTDataGenerator:
         with open(training_irt_path,'a',encoding='utf-8') as irt_f:
             while len(combination_set) < combination_count:
                 # 选取部分模型组合的模型下标
-                sampled_idxs = tuple(sorted(random.sample(idxs,anchor_count)))
-                if sampled_idxs in combination_set:
+                sampled_model_idxs = tuple(random.sample(model_idxs,anchor_count))
+                if sampled_model_idxs in combination_set:
                     continue
-                combination_set.add(sampled_idxs)
+                combination_set.add(sampled_model_idxs)
                 # 组合所选模型的答题数据
+
+                sampled_lines = [lines[i] for i in sampled_model_idxs]
                 with open(model_reaponses_path,'w',encoding='utf-8') as f:
-                    f.write(''.join([lines[i] for i in sampled_idxs]))
+                    f.write(''.join(sampled_lines))
                 cmd = ['py-irt','train',irt_model_type,model_reaponses_path,fit_output_dir]
                 for key in py_irt_params:
                     cmd.extend([f'--{key}',str(py_irt_params[key])])
@@ -120,10 +126,24 @@ class IRTDataGenerator:
                 with open(os.path.join(fit_output_dir,'best_parameters.json'),'r',encoding='utf-8') as f:
                     content = f.read()
 
+                # 被采样的模型的作答情况
+                sampled_model_responses = [json.loads(sampled_lines[i])['responses'] for i in range(anchor_count)]
+
                 # py-irt的拟合结果
                 fit_output = json.loads(content)
-                
-                
+                for item_idx,(diff,disc,target_diff,target_disc) in enumerate(zip(fit_output['diff'],fit_output['disc'],self.full_fit_out['diff'],self.full_fit_out['disc'])):
+                    item = self.idx2item[str(item_idx)]
+                    irt_data_line = {
+                        'ability': fit_output['ability'],
+                        'response': [sampled_model_responses[i][item] for i in range(anchor_count)],
+                        'diff': diff,
+                        'disc': disc,
+                        'target_diff': target_diff,
+                        'target_disc': target_disc,
+                        'embedding_item_idx': self.embedding_item2idx[item],
+                    }
+                    irt_f.write(json.dumps(irt_data_line,ensure_ascii=False)+'\n')
+
                 print(f"当前已生成{len(combination_set)}轮{anchor_count}个模型组合的IRT参数数据")
 
     
@@ -202,7 +222,7 @@ class MyDataset(Dataset):
     """
     IRT参数纠正器数据，用于生成残差模型的IRT部分训练数据，目前只有离线模式。
     """
-    def __init__(self,train_IRT_params:Optional[dict]=None, target_item_params:Optional[dict]=None,
+    def __init__(self,train_IRT_params:Optional[dict]=None, 
                  item_embeddings:Optional[torch.Tensor]=None, archor_count:int=5,
                  max_sample_count:int=100000,random_seed:int=42):
 
@@ -213,12 +233,12 @@ class MyDataset(Dataset):
             raise ValueError('IRTDataloader: 需要传入目标题目参数。')
 
         self.train_IRT_params = train_IRT_params
-        self.target_item_params = target_item_params
         self.item_embeddings = item_embeddings
+        self.max_sample_count = min(max_sample_count,len(train_IRT_params))
         # TODO: 确定train_IRT_params的格式，从而确定长度
 
     def __len__(self):
-        return len(self.train_df)
+        return self.max_sample_count
 
     def __getitem__(self, idx):
         row = self.train_df.iloc[idx]
@@ -246,6 +266,9 @@ if __name__=='__main__':
     # evaluator = Evaluator(responses_df[:5])
     # evaluator.pairwise_consistence(range(400))
     
-    irt_data_generator = IRTDataGenerator('./global_selected_400_train.jsonl')
-    irt_data_generator.generate(100,5,'20260727')
+    irt_data_generator = IRTDataGenerator('./global_selected_400_train.jsonl','./full_fit/best_parameters.json')
+    py_irt_params = {
+
+    }
+    irt_data_generator.generate(100,5,'20260728')
     
