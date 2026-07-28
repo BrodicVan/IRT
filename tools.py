@@ -51,12 +51,30 @@ class Sampler:
 
 class IRTDataGenerator:
     """
-    IRT数据生成器，用于批量生成IRT参数纠正器的IRT相关数据。
+    IRT数据生成器，用于批量生成IRT参数纠正器的IRT相关数据，暂时只支持2pl。
     """
-    def __init__(self,responses_jsonl_path:str,random_seed=42):
-        # 对responses_jsonl_path中的json行进行100轮取5个的抽样
-        self.lines = open(responses_jsonl_path,'r',encoding='utf-8').readlines()
-        self.model_count = len(self.lines)
+    def __init__(self,full_responses_jsonl_path:str,full_fit_output_path:str,random_seed=42):
+        
+        self.full_responses_jsonl_path = full_responses_jsonl_path
+        lines = open(self.full_responses_jsonl_path,'r',encoding='utf-8').readlines()
+        self.model_count = len(lines)
+        
+        item_0 = json.loads(lines[0])
+        self.item_count = len(item_0['responses'])
+
+        with open(full_fit_output_path, 'r', encoding='utf-8') as f:
+            self.full_fit_out = json.loads(f.read())
+
+        # 模型-下标映射
+        self.idx2model = self.full_fit_out['subject_ids']
+        self.model2idx = {model:idx for idx,model in self.idx2model.items()}
+
+        # 题目-下标映射
+        self.idx2item = self.full_fit_out['item_ids']
+        self.item2idx = {model:idx for idx,model in self.idx2item.items()}
+
+        
+
 
     def generate(self, combination_count:int, anchor_count:int, 
                  output_dir:str, 
@@ -64,15 +82,18 @@ class IRTDataGenerator:
         """
         选取多种模型组合进行拟合得到IRT参数数据
         """
+        lines = open(self.full_responses_jsonl_path,'r',encoding='utf-8').readlines()
+        
+        
         print(f"开始生成{combination_count}轮{anchor_count}个模型组合的IRT参数数据")
         combination_set = set()
         idxs = list(range(self.model_count))
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
 
-        irt_input_path = os.path.join(output_dir,'sampled_responses.jsonl')
-        irt_output_dir = os.path.join(output_dir,'fit_output')
-        training_data_path = os.path.join(output_dir,'irt_inputs.jsonl')
+        model_reaponses_path = os.path.join(output_dir,'sampled_responses.jsonl')
+        fit_output_dir = os.path.join(output_dir,'fit_output')
+        training_irt_path = os.path.join(output_dir,'unprocessed_training_irt_data.jsonl')
         
 
         if py_irt_params is None:
@@ -82,25 +103,31 @@ class IRTDataGenerator:
         py_irt_params['dims'] = py_irt_params.get('dims',10)
         py_irt_params['device'] = py_irt_params.get('device','cuda' if torch.cuda.is_available() else 'cpu')
         
+        with open(training_irt_path,'a',encoding='utf-8') as irt_f:
+            while len(combination_set) < combination_count:
+                # 选取部分模型组合的模型下标
+                sampled_idxs = tuple(sorted(random.sample(idxs,anchor_count)))
+                if sampled_idxs in combination_set:
+                    continue
+                combination_set.add(sampled_idxs)
+                # 组合所选模型的答题数据
+                with open(model_reaponses_path,'w',encoding='utf-8') as f:
+                    f.write(''.join([lines[i] for i in sampled_idxs]))
+                cmd = ['py-irt','train',irt_model_type,model_reaponses_path,fit_output_dir]
+                for key in py_irt_params:
+                    cmd.extend([f'--{key}',str(py_irt_params[key])])
+                subprocess.run(cmd)
+                with open(os.path.join(fit_output_dir,'best_parameters.json'),'r',encoding='utf-8') as f:
+                    content = f.read()
 
-        while len(combination_set) < combination_count:
-            sampled_idxs = tuple(sorted(random.sample(idxs,anchor_count)))
-            if sampled_idxs in combination_set:
-                continue
-            combination_set.add(sampled_idxs)
-            with open(irt_input_path,'w',encoding='utf-8') as f:
-                f.write(''.join([self.lines[i] for i in sampled_idxs]))
-            cmd = ['py-irt','train',irt_model_type,irt_input_path,irt_output_dir]
-            for key in py_irt_params:
-                cmd.extend([f'--{key}',str(py_irt_params[key])])
-            subprocess.run(cmd)
-            with open(os.path.join(irt_output_dir,'best_parameters.json'),'r',encoding='utf-8') as f:
-                content = f.read()
-            with open(training_data_path,'a',encoding='utf-8') as f:
-                f.write(content.strip()+'\n')
-            print(f"当前已生成{len(combination_set)}轮{anchor_count}个模型组合的IRT参数数据")
+                # py-irt的拟合结果
+                fit_output = json.loads(content)
+                
+                
+                print(f"当前已生成{len(combination_set)}轮{anchor_count}个模型组合的IRT参数数据")
 
-
+    
+      
 class Evaluator:
     """
     压缩后数据集评估器
